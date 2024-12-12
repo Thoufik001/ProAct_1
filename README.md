@@ -45,15 +45,15 @@ Visualization: View trends and patterns in operational data.
 Retraining: Upload new data to retrain the predictive model for improved accuracy.
 
 ## Project Structure
-ProAct_1/
-├── data/                   # Sample datasets for testing
-├── models/                 # Pre-trained models and encoders
-├── main.py                 # Backend API for predictions
-├── retrain.py              # Script to retrain models with new data
-├── streamlit_app.py        # Streamlit web app interface
-├── train_model.py          # Machine learning model training script
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+- **ProAct_1/**
+  - `data/`: Sample datasets for testing.
+  - `models/`: Pre-trained models and encoders.
+  - `main.py`: Backend API for predictions.
+  - `retrain.py`: Script to retrain models with new data.
+  - `streamlit_app.py`: Streamlit web app interface.
+  - `train_model.py`: Machine learning model training script.
+  - `requirements.txt`: Python dependencies.
+  - `README.md`: Project documentation.
 
 ## License
 This software is the proprietary property of ERPROOTS Pvt Ltd. Unauthorized copying, modification, or distribution is strictly prohibited.
