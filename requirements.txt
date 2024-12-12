@@ -4,6 +4,7 @@ scikit-learn
 imbalanced-learn
 requests
 streamlit
+plotly
 matplotlib
 seaborn
 python-multipart
