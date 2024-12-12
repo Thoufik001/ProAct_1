@@ -9,3 +9,5 @@ matplotlib
 seaborn
 python-multipart
 python-multipart
+fastapi
+uvicorn
