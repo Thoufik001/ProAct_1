@@ -46,7 +46,6 @@ Retraining: Upload new data to retrain the predictive model for improved accurac
 
 ## Project Structure
 ProAct_1/
-│
 ├── data/                   # Sample datasets for testing
 ├── models/                 # Pre-trained models and encoders
 ├── main.py                 # Backend API for predictions
