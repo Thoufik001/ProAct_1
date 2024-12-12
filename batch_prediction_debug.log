@@ -1,0 +1,480 @@
+2024-12-11 12:49:06,678 - DEBUG - Calling on_part_begin with no data
+2024-12-11 12:49:06,678 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 12:49:06,678 - DEBUG - Calling on_header_value with data[57:100]
+2024-12-11 12:49:06,679 - DEBUG - Calling on_header_end with no data
+2024-12-11 12:49:06,679 - DEBUG - Calling on_header_field with data[102:114]
+2024-12-11 12:49:06,679 - DEBUG - Calling on_header_value with data[116:124]
+2024-12-11 12:49:06,679 - DEBUG - Calling on_header_end with no data
+2024-12-11 12:49:06,679 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 12:49:06,679 - DEBUG - Calling on_part_data with data[128:1349]
+2024-12-11 12:49:06,680 - DEBUG - Calling on_part_end with no data
+2024-12-11 12:49:06,680 - DEBUG - Calling on_end with no data
+2024-12-11 12:49:06,688 - DEBUG - Batch Prediction Started
+2024-12-11 12:49:06,689 - DEBUG - Input DataFrame Columns: ['UDI', 'Product ID', 'Type', 'Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
+2024-12-11 12:49:06,689 - DEBUG - Input DataFrame Shape: (29, 8)
+2024-12-11 12:49:06,689 - DEBUG - Input DataFrame Columns: ['UDI', 'Product ID', 'Type', 'Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
+2024-12-11 12:49:06,690 - DEBUG - Input DataFrame Shape: (29, 8)
+2024-12-11 12:49:06,793 - DEBUG - Input DataFrame Head:
+    UDI Product ID Type  ...  Rotational speed [rpm]  Torque [Nm]  Tool wear [min]
+0  9989     L57168    L  ...                    1771         24.1              213
+1  9990     M24849    M  ...                    1577         33.2                0
+2  9991     L57170    L  ...                    1527         36.2                3
+3  9992     M24851    M  ...                    1827         26.1                5
+4  9993     L57172    L  ...                    1484         39.2                8
+
+[5 rows x 8 columns]
+2024-12-11 12:49:06,793 - DEBUG - Matched Columns: {'air_temperature': 'Air temperature [K]', 'process_temperature': 'Process temperature [K]', 'rotational_speed': 'Rotational speed [rpm]', 'torque': 'Torque [Nm]', 'tool_wear': 'Tool wear [min]', 'type': 'Type'}
+2024-12-11 12:49:06,811 - DEBUG - Transformed DataFrame Head:
+    UDI Product ID  type  air_temperature  process_temperature  rotational_speed  torque  tool_wear
+0  9989     L57168     0            298.9                308.6              1771    24.1        213
+1  9990     M24849     1            298.8                308.5              1577    33.2          0
+2  9991     L57170     0            298.8                308.5              1527    36.2          3
+3  9992     M24851     1            298.9                308.4              1827    26.1          5
+4  9993     L57172     0            298.8                308.4              1484    39.2          8
+2024-12-11 12:49:06,813 - ERROR - Prediction Error for row 0: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,814 - ERROR - Prediction Error for row 1: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,814 - ERROR - Prediction Error for row 2: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,815 - ERROR - Prediction Error for row 3: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,815 - ERROR - Prediction Error for row 4: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,816 - ERROR - Prediction Error for row 5: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,816 - ERROR - Prediction Error for row 6: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,817 - ERROR - Prediction Error for row 7: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,817 - ERROR - Prediction Error for row 8: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,818 - ERROR - Prediction Error for row 9: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,818 - ERROR - Prediction Error for row 10: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,819 - ERROR - Prediction Error for row 11: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,819 - ERROR - Prediction Error for row 12: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,819 - ERROR - Prediction Error for row 13: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,820 - ERROR - Prediction Error for row 14: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,820 - ERROR - Prediction Error for row 15: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,820 - ERROR - Prediction Error for row 16: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,821 - ERROR - Prediction Error for row 17: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,821 - ERROR - Prediction Error for row 18: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,821 - ERROR - Prediction Error for row 19: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,828 - ERROR - Prediction Error for row 20: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,829 - ERROR - Prediction Error for row 21: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,829 - ERROR - Prediction Error for row 22: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,829 - ERROR - Prediction Error for row 23: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,830 - ERROR - Prediction Error for row 24: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,830 - ERROR - Prediction Error for row 25: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,830 - ERROR - Prediction Error for row 26: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,831 - ERROR - Prediction Error for row 27: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,831 - ERROR - Prediction Error for row 28: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:49:06,832 - ERROR - Unexpected error in batch prediction: 'major_cause_prediction'
+2024-12-11 12:49:07,090 - ERROR - Traceback (most recent call last):
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'major_cause_prediction'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\F\ERPROOTS\2 proact\main.py", line 290, in batch_predict
+    "cause_distribution": pd.DataFrame(results)["major_cause_prediction"].value_counts().to_dict() if results else {},
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'major_cause_prediction'
+
+2024-12-11 12:50:12,609 - DEBUG - Calling on_part_begin with no data
+2024-12-11 12:50:12,609 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 12:50:12,609 - DEBUG - Calling on_header_value with data[57:100]
+2024-12-11 12:50:12,609 - DEBUG - Calling on_header_end with no data
+2024-12-11 12:50:12,609 - DEBUG - Calling on_header_field with data[102:114]
+2024-12-11 12:50:12,610 - DEBUG - Calling on_header_value with data[116:124]
+2024-12-11 12:50:12,610 - DEBUG - Calling on_header_end with no data
+2024-12-11 12:50:12,610 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 12:50:12,610 - DEBUG - Calling on_part_data with data[128:1349]
+2024-12-11 12:50:12,610 - DEBUG - Calling on_part_end with no data
+2024-12-11 12:50:12,610 - DEBUG - Calling on_end with no data
+2024-12-11 12:50:12,616 - DEBUG - Batch Prediction Started
+2024-12-11 12:50:12,616 - DEBUG - Input DataFrame Columns: ['UDI', 'Product ID', 'Type', 'Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
+2024-12-11 12:50:12,616 - DEBUG - Input DataFrame Shape: (29, 8)
+2024-12-11 12:50:12,616 - DEBUG - Input DataFrame Columns: ['UDI', 'Product ID', 'Type', 'Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
+2024-12-11 12:50:12,616 - DEBUG - Input DataFrame Shape: (29, 8)
+2024-12-11 12:50:12,645 - DEBUG - Input DataFrame Head:
+    UDI Product ID Type  ...  Rotational speed [rpm]  Torque [Nm]  Tool wear [min]
+0  9989     L57168    L  ...                    1771         24.1              213
+1  9990     M24849    M  ...                    1577         33.2                0
+2  9991     L57170    L  ...                    1527         36.2                3
+3  9992     M24851    M  ...                    1827         26.1                5
+4  9993     L57172    L  ...                    1484         39.2                8
+
+[5 rows x 8 columns]
+2024-12-11 12:50:12,646 - DEBUG - Matched Columns: {'air_temperature': 'Air temperature [K]', 'process_temperature': 'Process temperature [K]', 'rotational_speed': 'Rotational speed [rpm]', 'torque': 'Torque [Nm]', 'tool_wear': 'Tool wear [min]', 'type': 'Type'}
+2024-12-11 12:50:12,674 - DEBUG - Transformed DataFrame Head:
+    UDI Product ID  type  air_temperature  process_temperature  rotational_speed  torque  tool_wear
+0  9989     L57168     0            298.9                308.6              1771    24.1        213
+1  9990     M24849     1            298.8                308.5              1577    33.2          0
+2  9991     L57170     0            298.8                308.5              1527    36.2          3
+3  9992     M24851     1            298.9                308.4              1827    26.1          5
+4  9993     L57172     0            298.8                308.4              1484    39.2          8
+2024-12-11 12:50:12,676 - ERROR - Prediction Error for row 0: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,676 - ERROR - Prediction Error for row 1: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,676 - ERROR - Prediction Error for row 2: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,677 - ERROR - Prediction Error for row 3: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,677 - ERROR - Prediction Error for row 4: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,677 - ERROR - Prediction Error for row 5: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,678 - ERROR - Prediction Error for row 6: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,678 - ERROR - Prediction Error for row 7: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,678 - ERROR - Prediction Error for row 8: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,679 - ERROR - Prediction Error for row 9: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,679 - ERROR - Prediction Error for row 10: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,679 - ERROR - Prediction Error for row 11: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,680 - ERROR - Prediction Error for row 12: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,680 - ERROR - Prediction Error for row 13: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,680 - ERROR - Prediction Error for row 14: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,681 - ERROR - Prediction Error for row 15: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,681 - ERROR - Prediction Error for row 16: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,682 - ERROR - Prediction Error for row 17: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,683 - ERROR - Prediction Error for row 18: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,683 - ERROR - Prediction Error for row 19: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,684 - ERROR - Prediction Error for row 20: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,684 - ERROR - Prediction Error for row 21: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,684 - ERROR - Prediction Error for row 22: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,685 - ERROR - Prediction Error for row 23: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,685 - ERROR - Prediction Error for row 24: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,685 - ERROR - Prediction Error for row 25: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,686 - ERROR - Prediction Error for row 26: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,686 - ERROR - Prediction Error for row 27: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,687 - ERROR - Prediction Error for row 28: Error processing prediction: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 6 and the array at index 1 has size 4
+2024-12-11 12:50:12,688 - ERROR - Unexpected error in batch prediction: 'major_cause_prediction'
+2024-12-11 12:50:12,699 - ERROR - Traceback (most recent call last):
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'major_cause_prediction'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\F\ERPROOTS\2 proact\main.py", line 290, in batch_predict
+    "cause_distribution": pd.DataFrame(results)["major_cause_prediction"].value_counts().to_dict() if results else {},
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'major_cause_prediction'
+
+2024-12-11 12:51:40,189 - DEBUG - Calling on_part_begin with no data
+2024-12-11 12:51:40,189 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 12:51:40,189 - DEBUG - Calling on_header_value with data[57:100]
+2024-12-11 12:51:40,190 - DEBUG - Calling on_header_end with no data
+2024-12-11 12:51:40,190 - DEBUG - Calling on_header_field with data[102:114]
+2024-12-11 12:51:40,190 - DEBUG - Calling on_header_value with data[116:124]
+2024-12-11 12:51:40,190 - DEBUG - Calling on_header_end with no data
+2024-12-11 12:51:40,190 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 12:51:40,190 - DEBUG - Calling on_part_data with data[128:1349]
+2024-12-11 12:51:40,190 - DEBUG - Calling on_part_end with no data
+2024-12-11 12:51:40,190 - DEBUG - Calling on_end with no data
+2024-12-11 12:51:40,195 - DEBUG - Batch Prediction Started
+2024-12-11 12:51:40,195 - DEBUG - Input DataFrame Columns: ['UDI', 'Product ID', 'Type', 'Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
+2024-12-11 12:51:40,195 - DEBUG - Input DataFrame Shape: (29, 8)
+2024-12-11 12:51:40,195 - DEBUG - Input DataFrame Columns: ['UDI', 'Product ID', 'Type', 'Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
+2024-12-11 12:51:40,195 - DEBUG - Input DataFrame Shape: (29, 8)
+2024-12-11 12:51:40,210 - DEBUG - Input DataFrame Head:
+    UDI Product ID Type  ...  Rotational speed [rpm]  Torque [Nm]  Tool wear [min]
+0  9989     L57168    L  ...                    1771         24.1              213
+1  9990     M24849    M  ...                    1577         33.2                0
+2  9991     L57170    L  ...                    1527         36.2                3
+3  9992     M24851    M  ...                    1827         26.1                5
+4  9993     L57172    L  ...                    1484         39.2                8
+
+[5 rows x 8 columns]
+2024-12-11 12:51:40,210 - DEBUG - Matched Columns: {'air_temperature': 'Air temperature [K]', 'process_temperature': 'Process temperature [K]', 'rotational_speed': 'Rotational speed [rpm]', 'torque': 'Torque [Nm]', 'tool_wear': 'Tool wear [min]', 'type': 'Type'}
+2024-12-11 12:51:40,222 - DEBUG - Transformed DataFrame Head:
+    UDI Product ID  type  air_temperature  process_temperature  rotational_speed  torque  tool_wear
+0  9989     L57168     0            298.9                308.6              1771    24.1        213
+1  9990     M24849     1            298.8                308.5              1577    33.2          0
+2  9991     L57170     0            298.8                308.5              1527    36.2          3
+3  9992     M24851     1            298.9                308.4              1827    26.1          5
+4  9993     L57172     0            298.8                308.4              1484    39.2          8
+2024-12-11 12:51:40,224 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,224 - ERROR - Prediction Error for row 0: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,225 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,225 - ERROR - Prediction Error for row 1: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,226 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,226 - ERROR - Prediction Error for row 2: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,226 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,226 - ERROR - Prediction Error for row 3: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,227 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,227 - ERROR - Prediction Error for row 4: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,228 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,228 - ERROR - Prediction Error for row 5: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,229 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,230 - ERROR - Prediction Error for row 6: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,230 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,230 - ERROR - Prediction Error for row 7: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,231 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,231 - ERROR - Prediction Error for row 8: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,232 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,232 - ERROR - Prediction Error for row 9: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,232 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,232 - ERROR - Prediction Error for row 10: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,233 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,233 - ERROR - Prediction Error for row 11: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,234 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,234 - ERROR - Prediction Error for row 12: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,235 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,235 - ERROR - Prediction Error for row 13: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,235 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,235 - ERROR - Prediction Error for row 14: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,236 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,236 - ERROR - Prediction Error for row 15: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,237 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,237 - ERROR - Prediction Error for row 16: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,237 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,238 - ERROR - Prediction Error for row 17: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,238 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,238 - ERROR - Prediction Error for row 18: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,239 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,239 - ERROR - Prediction Error for row 19: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,240 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,240 - ERROR - Prediction Error for row 20: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,240 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,241 - ERROR - Prediction Error for row 21: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,241 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,241 - ERROR - Prediction Error for row 22: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,242 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,242 - ERROR - Prediction Error for row 23: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,243 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,243 - ERROR - Prediction Error for row 24: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,243 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,243 - ERROR - Prediction Error for row 25: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,244 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,244 - ERROR - Prediction Error for row 26: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,245 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,245 - ERROR - Prediction Error for row 27: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,246 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,246 - ERROR - Prediction Error for row 28: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:51:40,247 - ERROR - Unexpected error in batch prediction: 'major_cause_name'
+2024-12-11 12:51:40,254 - ERROR - Traceback (most recent call last):
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'major_cause_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\F\ERPROOTS\2 proact\main.py", line 291, in batch_predict
+    "cause_distribution": pd.DataFrame(results)["major_cause_name"].value_counts().to_dict() if results else {},
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'major_cause_name'
+
+2024-12-11 12:55:04,776 - DEBUG - Calling on_part_begin with no data
+2024-12-11 12:55:04,776 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 12:55:04,776 - DEBUG - Calling on_header_value with data[57:100]
+2024-12-11 12:55:04,777 - DEBUG - Calling on_header_end with no data
+2024-12-11 12:55:04,777 - DEBUG - Calling on_header_field with data[102:114]
+2024-12-11 12:55:04,777 - DEBUG - Calling on_header_value with data[116:124]
+2024-12-11 12:55:04,777 - DEBUG - Calling on_header_end with no data
+2024-12-11 12:55:04,777 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 12:55:04,778 - DEBUG - Calling on_part_data with data[128:1331]
+2024-12-11 12:55:04,778 - DEBUG - Calling on_part_end with no data
+2024-12-11 12:55:04,778 - DEBUG - Calling on_end with no data
+2024-12-11 12:55:04,786 - DEBUG - Batch Prediction Started
+2024-12-11 12:55:04,786 - DEBUG - Input DataFrame Columns: ['UDI', 'Product ID', 'Type', 'Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
+2024-12-11 12:55:04,786 - DEBUG - Input DataFrame Shape: (29, 8)
+2024-12-11 12:55:04,792 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,792 - ERROR - Prediction Error for row 0: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,796 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,796 - ERROR - Prediction Error for row 1: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,797 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,797 - ERROR - Prediction Error for row 2: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,798 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,799 - ERROR - Prediction Error for row 3: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,799 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,800 - ERROR - Prediction Error for row 4: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,800 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,800 - ERROR - Prediction Error for row 5: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,801 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,801 - ERROR - Prediction Error for row 6: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,802 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,802 - ERROR - Prediction Error for row 7: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,803 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,803 - ERROR - Prediction Error for row 8: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,804 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,804 - ERROR - Prediction Error for row 9: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,805 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,805 - ERROR - Prediction Error for row 10: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,806 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,806 - ERROR - Prediction Error for row 11: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,807 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,807 - ERROR - Prediction Error for row 12: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,808 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,809 - ERROR - Prediction Error for row 13: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,810 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,810 - ERROR - Prediction Error for row 14: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,811 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,811 - ERROR - Prediction Error for row 15: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,812 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,812 - ERROR - Prediction Error for row 16: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,813 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,813 - ERROR - Prediction Error for row 17: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,814 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,814 - ERROR - Prediction Error for row 18: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,814 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,815 - ERROR - Prediction Error for row 19: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,815 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,815 - ERROR - Prediction Error for row 20: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,816 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,816 - ERROR - Prediction Error for row 21: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,817 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,817 - ERROR - Prediction Error for row 22: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,818 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,818 - ERROR - Prediction Error for row 23: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,819 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,819 - ERROR - Prediction Error for row 24: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,820 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,820 - ERROR - Prediction Error for row 25: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,821 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,821 - ERROR - Prediction Error for row 26: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,822 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,822 - ERROR - Prediction Error for row 27: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,822 - ERROR - Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,823 - ERROR - Prediction Error for row 28: Error processing prediction: X has 6 features, but StandardScaler is expecting 10 features as input.
+2024-12-11 12:55:04,824 - ERROR - Unexpected error in batch prediction: 'major_cause_name'
+2024-12-11 12:55:04,837 - ERROR - Traceback (most recent call last):
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'major_cause_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\F\ERPROOTS\2 proact\main.py", line 264, in batch_predict
+    "cause_distribution": pd.DataFrame(results)["major_cause_name"].value_counts().to_dict() if results else {},
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "d:\F\ERPROOTS\project\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'major_cause_name'
+
+2024-12-11 12:58:00,925 - DEBUG - Calling on_part_begin with no data
+2024-12-11 12:58:00,925 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 12:58:00,925 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-11 12:58:00,925 - DEBUG - Calling on_header_end with no data
+2024-12-11 12:58:00,925 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 12:58:00,926 - DEBUG - Calling on_part_data with data[100:1303]
+2024-12-11 12:58:00,926 - DEBUG - Calling on_part_end with no data
+2024-12-11 12:58:00,926 - DEBUG - Calling on_end with no data
+2024-12-11 13:00:49,080 - DEBUG - Calling on_part_begin with no data
+2024-12-11 13:00:49,081 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 13:00:49,082 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-11 13:00:49,082 - DEBUG - Calling on_header_end with no data
+2024-12-11 13:00:49,082 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 13:00:49,083 - DEBUG - Calling on_part_data with data[100:1303]
+2024-12-11 13:00:49,083 - DEBUG - Calling on_part_end with no data
+2024-12-11 13:00:49,083 - DEBUG - Calling on_end with no data
+2024-12-11 13:01:27,963 - DEBUG - Calling on_part_begin with no data
+2024-12-11 13:01:27,964 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 13:01:27,964 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-11 13:01:27,964 - DEBUG - Calling on_header_end with no data
+2024-12-11 13:01:27,964 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 13:01:27,965 - DEBUG - Calling on_part_data with data[100:1303]
+2024-12-11 13:01:27,965 - DEBUG - Calling on_part_end with no data
+2024-12-11 13:01:27,965 - DEBUG - Calling on_end with no data
+2024-12-11 13:02:44,331 - DEBUG - Calling on_part_begin with no data
+2024-12-11 13:02:44,332 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 13:02:44,332 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-11 13:02:44,333 - DEBUG - Calling on_header_end with no data
+2024-12-11 13:02:44,333 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 13:02:44,333 - DEBUG - Calling on_part_data with data[100:1303]
+2024-12-11 13:02:44,333 - DEBUG - Calling on_part_end with no data
+2024-12-11 13:02:44,334 - DEBUG - Calling on_end with no data
+2024-12-11 13:05:28,013 - DEBUG - Calling on_part_begin with no data
+2024-12-11 13:05:28,015 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 13:05:28,016 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-11 13:05:28,016 - DEBUG - Calling on_header_end with no data
+2024-12-11 13:05:28,017 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 13:05:28,017 - DEBUG - Calling on_part_data with data[100:1303]
+2024-12-11 13:05:28,017 - DEBUG - Calling on_part_end with no data
+2024-12-11 13:05:28,017 - DEBUG - Calling on_end with no data
+2024-12-11 13:07:33,015 - DEBUG - Calling on_part_begin with no data
+2024-12-11 13:07:33,015 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 13:07:33,015 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-11 13:07:33,015 - DEBUG - Calling on_header_end with no data
+2024-12-11 13:07:33,015 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 13:07:33,016 - DEBUG - Calling on_part_data with data[100:1303]
+2024-12-11 13:07:33,016 - DEBUG - Calling on_part_end with no data
+2024-12-11 13:07:33,016 - DEBUG - Calling on_end with no data
+2024-12-11 13:09:03,617 - DEBUG - Calling on_part_begin with no data
+2024-12-11 13:09:03,618 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 13:09:03,618 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-11 13:09:03,619 - DEBUG - Calling on_header_end with no data
+2024-12-11 13:09:03,619 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 13:09:03,620 - DEBUG - Calling on_part_data with data[100:1303]
+2024-12-11 13:09:03,620 - DEBUG - Calling on_part_end with no data
+2024-12-11 13:09:03,620 - DEBUG - Calling on_end with no data
+2024-12-11 13:09:48,686 - DEBUG - Calling on_part_begin with no data
+2024-12-11 13:09:48,686 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 13:09:48,687 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-11 13:09:48,687 - DEBUG - Calling on_header_end with no data
+2024-12-11 13:09:48,687 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 13:09:48,688 - DEBUG - Calling on_part_data with data[100:1303]
+2024-12-11 13:09:48,688 - DEBUG - Calling on_part_end with no data
+2024-12-11 13:09:48,688 - DEBUG - Calling on_end with no data
+2024-12-11 13:10:57,749 - DEBUG - Calling on_part_begin with no data
+2024-12-11 13:10:57,749 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-11 13:10:57,750 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-11 13:10:57,750 - DEBUG - Calling on_header_end with no data
+2024-12-11 13:10:57,750 - DEBUG - Calling on_headers_finished with no data
+2024-12-11 13:10:57,750 - DEBUG - Calling on_part_data with data[100:1303]
+2024-12-11 13:10:57,751 - DEBUG - Calling on_part_end with no data
+2024-12-11 13:10:57,751 - DEBUG - Calling on_end with no data
+2024-12-11 17:01:33,993 - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2024-12-12 14:05:37,287 - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2024-12-12 14:10:46,459 - DEBUG - Using proactor: IocpProactor
+2024-12-12 14:11:08,927 - DEBUG - Using proactor: IocpProactor
+2024-12-12 14:11:56,993 - DEBUG - Calling on_part_begin with no data
+2024-12-12 14:11:56,993 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-12 14:11:56,994 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-12 14:11:56,994 - DEBUG - Calling on_header_end with no data
+2024-12-12 14:11:56,994 - DEBUG - Calling on_headers_finished with no data
+2024-12-12 14:11:56,995 - DEBUG - Calling on_part_data with data[100:1321]
+2024-12-12 14:11:56,995 - DEBUG - Calling on_part_end with no data
+2024-12-12 14:11:56,995 - DEBUG - Calling on_end with no data
+2024-12-12 14:15:10,694 - DEBUG - Using proactor: IocpProactor
+2024-12-12 14:18:25,360 - DEBUG - Calling on_part_begin with no data
+2024-12-12 14:18:25,361 - DEBUG - Calling on_header_field with data[36:55]
+2024-12-12 14:18:25,361 - DEBUG - Calling on_header_value with data[57:96]
+2024-12-12 14:18:25,362 - DEBUG - Calling on_header_end with no data
+2024-12-12 14:18:25,362 - DEBUG - Calling on_headers_finished with no data
+2024-12-12 14:18:25,362 - DEBUG - Calling on_part_data with data[100:1321]
+2024-12-12 14:18:25,363 - DEBUG - Calling on_part_end with no data
+2024-12-12 14:18:25,363 - DEBUG - Calling on_end with no data

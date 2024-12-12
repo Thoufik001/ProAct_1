@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+requests
+streamlit
+matplotlib
+seaborn
+python-multipart
+python-multipart
